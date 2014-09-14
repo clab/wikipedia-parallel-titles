@@ -14,7 +14,9 @@ Example:
 
 #### Extract parallel titles
 
-To extract the parallel corpus run the following:
+To extract the parallel corpus run the following where the first command line argument is the ISO 639 code of the target language and the second argument is the (path) prefix of the database dump files.
+
+Example:
 
     ./build-corpus.sh en arwiki-20140831 > titles.txt
 
