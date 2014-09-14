@@ -28,5 +28,7 @@ For example, the following will filter out pairs that do not contain at least on
 
     ./build-corpus.sh en arwiki-20140831 | ./filters/filter-perso-arabic.pl > titles.txt
 
+#### Software dependencies
 
+It is recommended that you have the `uconv` tool ([International Components for Unicode](http://site.icu-project.org/)) installed since it is used to normalize Unicode characters.
 
