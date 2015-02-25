@@ -15,8 +15,8 @@ while(<STDIN>) {
   $a =~ s/\([^)]+\)//;
   $b =~ s/\([^)]+\)//;
   next if ($b =~ /template:|Template:|Category:/);
+  next if ($a =~ /^\s*$/ or $b =~ /^\s*$/);
   my $z = "$a ||| $b";
   $z =~ s/\s+/ /g;
   print "$z\n";
 }
-
